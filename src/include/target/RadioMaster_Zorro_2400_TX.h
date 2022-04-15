@@ -4,11 +4,11 @@
 // Copied from DupleTX
 
 // Any device features
-#define USE_TX_BACKPACK
+//#define USE_TX_BACKPACK
 #define USE_SX1280_DCDC
-#define USE_SKY85321
-#define SKY85321_PDET_SLOPE     0.035
-#define SKY85321_PDET_INTERCEPT 2.4
+//#define USE_SKY85321
+//#define SKY85321_PDET_SLOPE     0.035
+//#define SKY85321_PDET_INTERCEPT 2.4
 
 // GPIO pin definitions
 #define GPIO_PIN_NSS            5
@@ -24,17 +24,21 @@
 #define GPIO_PIN_RCSIGNAL_RX    3
 #define GPIO_PIN_RCSIGNAL_TX    1
 
-#define GPIO_PIN_PA_PDET        35
+//#define GPIO_PIN_PA_PDET        35
 
 // Backpack pins
 #define GPIO_PIN_DEBUG_RX       16
 #define GPIO_PIN_DEBUG_TX       17
-#define GPIO_PIN_BACKPACK_EN    25
-#define GPIO_PIN_BACKPACK_BOOT  15
+//#define GPIO_PIN_BACKPACK_EN    25
+//#define GPIO_PIN_BACKPACK_BOOT  15
 
 // Output Power
+//#define MinPower PWR_10mW
+//#define MaxPower PWR_250mW
+//#define POWER_OUTPUT_VALUES {-17,-13,-9,-6,-2}
+
 #define MinPower PWR_10mW
-#define MaxPower PWR_250mW
-#define POWER_OUTPUT_VALUES {-17,-13,-9,-6,-2}
+#define MaxPower PWR_500mW
+#define POWER_OUTPUT_VALUES {-18,-15,-13,-9,-4,3}
 
 #define Regulatory_Domain_ISM_2400 1
